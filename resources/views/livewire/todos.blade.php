@@ -1,7 +1,6 @@
 <div>
     <form wire:submit="add">
-        <input type="text" wire:model.live.debounce.5ms="todo">
-        <span>Current todo: {{ $todo }} </span>
+        <input type="text" wire:model="todo">
         <button type="submit">Add</button>
     </form>
 
