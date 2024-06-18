@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <livewire:todos />
+    <livewire:show-posts />
 </body>
 
 </html>

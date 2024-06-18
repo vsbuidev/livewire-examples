@@ -5,22 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>{{ $title ?? 'Page Title' }}</title>
-    <style>
+    <!-- <style>
         html,
         body {
             touch-action: manipulation;
             overflow: hidden;
         }
-    </style>
+    </style> -->
 </head>
 
 <body>
     <nav>
         <a href="/" @class(['current'=> request()->is('/')]) >Todos</a>
         <a href="/counter" @class(['current'=> request()->is('counter')])>Counter</a>
+        <a href="/show-posts" @class(['current'=> request()->is('show-posts')])>ShowPosts</a>
     </nav>
     {{ $slot }}
-    <script>
+    <!-- <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/serviceworker.js')
                 .then(function(registration) {
@@ -54,7 +55,7 @@
         document.addEventListener('gestureend', function(event) {
             event.preventDefault();
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
